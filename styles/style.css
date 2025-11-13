@@ -50,6 +50,7 @@
 
 main {
   display: flex;
+  flex-direction: column;
   gap: 50px;
 }
 
@@ -73,9 +74,8 @@ main {
   width: 100%;
 }
 
-.img-container::after {
+.card__img-text {
   position: absolute;
-  content: "</HTML>";
   top: 25px;
   right: 13px;
 
@@ -84,13 +84,14 @@ main {
   font-weight: 400;
   line-height: 100%;
   opacity: 0.5;
+  mix-blend-mode: hard-light;
   text-shadow: 0 0 1px #fff, 0 0 1px #fff, 0 0 1px #fff;
   color: #000;
 }
 
-@supports (-webkit-text-stroke: 0.5px #fff) {
-  .img-container::after {
-    -webkit-text-stroke: 0.5px #fff;
+@supports (-webkit-text-stroke: 1px #fff) {
+  .card__img-text {
+    -webkit-text-stroke: 1px #fff;
     text-shadow: none;
   }
 }
