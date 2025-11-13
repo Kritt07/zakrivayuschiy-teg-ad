@@ -14,4 +14,41 @@
   min-inline-size: 320px;
   min-block-size: 100dvb;
   font-family: var(--font-base);
+  font-variation-settings: "wght" var(--wght-normal);
+}
+
+/* header */
+
+.header {
+  width: var(--section-size);
+  padding: 120px 0;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #fff;
+  
+}
+
+.header__title {
+  font-family: var(--font-accent);
+  font-size: var(--header-title);
+  line-height: 100%;
+  letter-spacing: 0%;
+  vertical-align: bottom;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.header__text {
+  font-family: var(--font-accent);
+  font-size: var(--header-text);
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-transform: uppercase;
+}
+
+/* main */
+
+.card {
+  width: var(--section-size);
+  margin: 0 auto;
 }
