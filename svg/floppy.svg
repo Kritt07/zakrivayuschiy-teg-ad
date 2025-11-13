@@ -1,6 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
-  <symbol id="pixel-art" viewBox="0 0 39 39" fill="none">
-    <path fill="#000" d="M0 0h3v3H0zm0 3h3v3H0zm0 3h3v3H0zm0 3h3v3H0zm0 3h3v3H0zm0 3h3v3H0zm0 3h3v3H0zm0 3h3v3H0zm0 3h3v3H0zm0 3h3v3H0zm0 3h3v3H0zm0 3h3v3H0zM33 0v3h-3V0z"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="39" height="39" fill="none" style="display: none;">
+  <symbol id="grid-icon" viewBox="0 0 39 39">
+    <!-- Все исходные path объединены в один symbol -->
+    <path fill="#000" d="M0 0h3v3H0zm0 3h3v3H0zm0 3h3v3H0zm0 3h3v3H0zm0 3h3v3H0zm0 3h3v3H0zm0 3h3v3H0zm0 3h3v3H0zm0 3h3v3H0zm0 3h3v3H0zm0 3h3v3H0zm0 3h3v3H0zm0 3h3v3H0zM33 0v3h-3V0z"/>
     <path fill="#000" d="M30.003 0v3h-3V0zM27 0v3h-3V0zm-3 0v3h-3V0zm-3.001 0v3h-3V0z"/>
     <path fill="#000" d="M18 0v3h-3V0zm-3.001 0v3h-3V0z"/>
     <path fill="#000" d="M12 0v3H9V0zM8.996 0v3h-3V0z"/>
