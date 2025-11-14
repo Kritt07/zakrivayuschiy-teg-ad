@@ -52,7 +52,7 @@ ol {
   white-space: nowrap;
 }
 
-.buttons__reset-styles {
+button {
   border: none;
   background-color: transparent;
   padding: 0;
