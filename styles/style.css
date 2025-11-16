@@ -10,6 +10,16 @@
 
 */
 
+button {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+}
+
+.border {
+  border: 2px solid #000;
+}
+
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
@@ -161,8 +171,11 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
+  overflow: hidden;
   width: 130px;
   height: 38px;
+  transition: box-shadow 0.3s ease;
 }
 
 .button__text {
@@ -171,6 +184,9 @@ main {
   font-size: 14px;
   line-height: 90%;
   letter-spacing: 0%;
+  mix-blend-mode: difference;
+  color: #fff;
+  z-index: 1;
 }
 
 .floppy__button {
@@ -178,12 +194,39 @@ main {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  position: relative;
+  overflow: hidden;
   gap: 8px;
-
   width: 306px;
   height: 80px;
   background-color: #fff;
   margin: 0 auto 100px;
+  transition: box-shadow 0.3s ease;
+}
+
+.card__like-button:focus, .floppy__button:focus {
+  box-shadow: 2px 2px 0 #000;
+  outline: none;
+}
+
+.card__like-button::after, .floppy__button::after {
+  position: absolute;
+  content: "";
+  background-color: #000;
+  width: 100%;
+  height: 100%;
+  translate: -100%;
+  transition: 0.5s ease-in-out;
+}
+
+.card__like-button:hover::after, .floppy__button:hover::after {
+  translate: 0;
+}
+
+.floppy__icon {
+  mix-blend-mode: difference;
+  /* color: #fff; */
+  z-index: 1;
 }
 
 /* dialog */
