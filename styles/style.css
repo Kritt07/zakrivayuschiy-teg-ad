@@ -69,11 +69,13 @@ main {
   line-height: 100%;
   letter-spacing: 0%;
   padding: 6px 10px;
+  border-bottom: 2px solid #000;
 }
 
 .img-container {
   position: relative;
   width: 100%;
+  overflow: hidden;
 }
 
 .card__img-text {
@@ -102,12 +104,41 @@ main {
   width: 100%;
 }
 
+.vehicle__2 {
+  filter: grayscale(80%);
+}
+
+.vehicle__3 {
+  filter: saturate(300%);
+}
+
+.vehicle__4 {
+  filter: hue-rotate(30deg);
+}
+
+.vehicle__5 {
+  filter: contrast(60%) invert(100%)
+}
+
+.vehicle__6 {
+  filter: sepia(90%);
+}
+
+.vehicle__7 {
+  filter: blur(20px);
+}
+
+.vehicle__8 {
+  filter: blur(3px) hue-rotate(90deg) contrast(70%)
+}
+
 .card__info {
   display: flex;
   flex-direction: column;
 
   padding: 25px;
   gap: 25px;
+  border-top: 2px solid #000;
 }
 
 .card__text {
