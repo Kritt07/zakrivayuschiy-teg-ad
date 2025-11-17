@@ -224,7 +224,7 @@
           </div>
         </div>
       </section>
-      <button class="floppy__button border" onclick="window['dialog-id'].showModal()">
+      <button class="floppy__button border" type="button" onclick="window['dialog-id'].showModal()">
         <svg class="floppy__icon" width="28" height="28">
           <use href="./svg/floppy.svg#floppy-icon" />
         </svg>
@@ -237,7 +237,7 @@
           </svg>
           <p class="dialog__text">Вставьте <br>дискету, чтобы <br>продолжить</p>
         </div>
-        <button class="dialog__button border" onclick="window['dialog-id'].close()"><span class="dialog__button-text">ok</span></button>
+        <button type="button" class="dialog__button border" onclick="window['dialog-id'].close()"><span class="dialog__button-text">ok</span></button>
       </dialog>
     </main>
     <script src="./scripts/like.js"></script>
